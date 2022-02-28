@@ -76,4 +76,4 @@ app.delete('/todos', async (req, res) => {
 
 const PORT = 7000;
 
-app.listen(PORT, console.log(`Server running on port ${PORT}`.green.bold));
+app.listen(PORT || process.env.PORT, console.log(`Server running !`.green.bold));
